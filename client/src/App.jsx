@@ -1,12 +1,13 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
-import { DashboardLayout, HomeLayout, Register, Login, Landing } from './pages'
+import { DashboardLayout, HomeLayout, Register, Login, Landing, Error } from './pages'
 
 // using an array to pass the structure to createBrowserRouter 
 const router = createBrowserRouter([
   {
   path:'/',
   element: <HomeLayout/>,
+  errorElement: <Error />,
   children: [
     {
       // when index: trur is set, this represents the default route when visiting the parent path
