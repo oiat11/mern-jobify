@@ -1,3 +1,5 @@
+// The index.js file re-exports default exports from individual component files.
+// It simplifies importing multiple components from a single location.
 export {default as DashboardLayout} from './DashboardLayout'
 export {default as Landing} from './Landing'
 export {default as HomeLayout} from './HomeLayout'
