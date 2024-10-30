@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components';
 import Wrapper from '../assets/wrappers/LandingPage'
 import main from '../assets/images/main.svg'
-import logo from '../assets/images/logo.svg'
+import {Logo} from '../Component'
 import { Link } from 'react-router-dom'
 
 const Landing = () => {
   return (
     <Wrapper>
       <nav>
-        <img src={logo} alt='jobify logo' className='logo'></img>
+        <Logo/>
       </nav>
       <div className='container page'>
         <div className='info'>
